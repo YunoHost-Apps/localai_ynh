@@ -4,8 +4,8 @@ packaging_format = 2
 
 id = "localai"
 name = "LocalAI"
-description.en = "Free, Open Source OpenAI alternative"
-description.fr = "Alternative gratuite et open source à l'OpenAI"
+description.en = "Open Source OpenAI alternative"
+description.fr = "Alternative open source à l'OpenAI"
 
 version = "3.5.0~ynh1"
 
@@ -17,7 +17,7 @@ website = "https://localai.io/"
 code = "https://github.com/mudler/LocalAI"
 
 [integration]
-yunohost = ">= 12.0.9"
+yunohost = ">= 12.1.17"
 helpers_version = "2.1"
 architectures = ["amd64"]
 multi_instance = false
