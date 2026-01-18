@@ -8,7 +8,7 @@ It shall NOT be edited by hand.
   LocalAI, packaged for YunoHost
 </h1>
 
-Open Source OpenAI alternative
+Run Large Language Models (LLM) locally
 
 [![🌐 Official app website](https://img.shields.io/badge/Official_app_website-darkgreen?style=for-the-badge)](https://localai.io/)
 [![Version: 3.9.0~ynh1](https://img.shields.io/badge/Version-3.9.0~ynh1-rgb(18,138,11)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/localai/)
