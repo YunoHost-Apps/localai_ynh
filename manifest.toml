@@ -4,7 +4,6 @@ packaging_format = 2
 
 id = "localai"
 name = "LocalAI"
-
 description.en = "Open Source OpenAI alternative"
 description.fr = "Alternative open source à l'OpenAI"
 
