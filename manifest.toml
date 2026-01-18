@@ -4,8 +4,9 @@ packaging_format = 2
 
 id = "localai"
 name = "LocalAI"
-description.en = "Open Source OpenAI alternative"
-description.fr = "Alternative open source à l'OpenAI"
+
+description.en = "Run Large Language Models (LLM) locally"
+description.fr = "Exécutez des modèles linguistiques à grande échelle (LLM) localement"
 
 version = "3.9.0~ynh1"
 
