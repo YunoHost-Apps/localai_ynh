@@ -11,6 +11,7 @@ test_format = 1.0
     # -------------------------------
     # Default args to use for install
     # -------------------------------
+    [default.curl_tests]
     home.path = "/system"
 
     # -------------------------------
