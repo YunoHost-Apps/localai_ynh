@@ -71,4 +71,4 @@ ram.runtime = "4G"
     [resources.ports]
 
     [resources.apt]
-    packages = "curl, awk, grep, sed"
+    packages = "curl, awk, grep, sed, pciutils"
