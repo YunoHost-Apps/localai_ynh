@@ -54,13 +54,13 @@ ynh_script_progression "Move old data directory contents for $app..."
 if [ -d "/tmp/generated/content" ]; then
   mkdir -p "$data_dir/generated/content"
   mv "/tmp/generated/content/." "$data_dir/generated/content"
-  rm -r "/tmp/generated/content"
+  ynh_secure_remove "/tmp/generated/content"
 fi
 
 if [ -d "/tmp/localai/upload" ]; then
   mkdir -p "$data_dir/upload"
   mv "/tmp/localai/upload/." "$data_dir/upload"
-  rm -r "/tmp/localai"
+  ynh_secure_remove "/tmp/localai"
 fi
 
 #=================================================
