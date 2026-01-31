@@ -53,14 +53,12 @@ ynh_config_add_logrotate
 ynh_script_progression "Move old data directory contents for $app..."
 if [ -d "/tmp/generated/content" ]; then
   mkdir -p "$data_dir/generated/content"
-  mv "/tmp/generated/content/." "$data_dir/generated/content"
-  ynh_secure_remove "/tmp/generated/content"
+  mv "/tmp/generated/content" "$data_dir/generated"
 fi
 
 if [ -d "/tmp/localai/upload" ]; then
   mkdir -p "$data_dir/upload"
-  mv "/tmp/localai/upload/." "$data_dir/upload"
-  ynh_secure_remove "/tmp/localai"
+  mv "/tmp/localai/upload" "$data_dir"
 fi
 
 #=================================================
