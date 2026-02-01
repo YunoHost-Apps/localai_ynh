@@ -48,6 +48,24 @@ yunohost service add "$app" --description="OpenAI alternative" --log="/var/log/$
 ynh_config_add_logrotate
 
 #=================================================
+# MOVE DATA FROM OLD DATA_DIR
+#=================================================
+if ynh_app_upgrading_from_version_before 3.10.1~ynh1; then
+  ynh_script_progression "Move old data directory contents for $app..."
+  if [ -d "/tmp/generated/content" ]; then
+    mkdir -p "$data_dir/generated/content"
+    mv "/tmp/generated/content" "$data_dir/generated"
+    ynh_safe_rm "/tmp/generated"
+  fi
+  
+  if [ -d "/tmp/localai/upload" ]; then
+    mkdir -p "$data_dir/upload"
+    mv "/tmp/localai/upload" "$data_dir"
+    ynh_safe_rm "/tmp/localai"
+  fi
+fi
+
+#=================================================
 # START SYSTEMD SERVICE
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
