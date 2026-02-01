@@ -50,7 +50,7 @@ ynh_config_add_logrotate
 #=================================================
 # MOVE DATA FROM OLD DATA_DIR
 #=================================================
-if ynh_app_upgrading_from_version_before 3.10.1~ynh1
+if ynh_app_upgrading_from_version_before 3.10.1~ynh1 then
   ynh_script_progression "Move old data directory contents for $app..."
   if [ -d "/tmp/generated/content" ]; then
     mkdir -p "$data_dir/generated/content"
