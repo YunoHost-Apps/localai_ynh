@@ -6,7 +6,7 @@ id = "localai"
 name = "LocalAI"
 description.en = "Run Large Language Models (LLM) locally"
 description.fr = "Exécutez des modèles linguistiques à grande échelle (LLM) localement"
-version = "4.4.3~ynh1"
+version = "4.5.6~ynh1"
 
 maintainers = []
 
@@ -44,10 +44,10 @@ ram.runtime = "4G"
     prefetch = false
     extract = false
     rename = "local-ai"
-    amd64.url = "https://github.com/mudler/LocalAI/releases/download/v4.4.3/local-ai-v4.4.3-linux-amd64"
-    amd64.sha256 = "22d38f2930640bc4364bb207a79dc149df047c7beddc8adb8910388ff0f29a8f"
-    arm64.url = "https://github.com/mudler/LocalAI/releases/download/v4.4.3/local-ai-v4.4.3-linux-arm64"
-    arm64.sha256 = "72ddc9e30f1f072f63c13f513e9624043585c2c8efc4ce844e9e6024881560dd"
+    amd64.url = "https://github.com/mudler/LocalAI/releases/download/v4.5.6/local-ai-v4.5.6-linux-amd64"
+    amd64.sha256 = "335b33e97062d1c26aa1807f228212b764d633cc62fb89350498e5ecf57acded"
+    arm64.url = "https://github.com/mudler/LocalAI/releases/download/v4.5.6/local-ai-v4.5.6-linux-arm64"
+    arm64.sha256 = "ac2d18b31b116ce6caef6d840ee33eac7dd434912f6bcaf3913e233f3825463f"
 
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset.amd64 = ".*-linux-amd64$"
